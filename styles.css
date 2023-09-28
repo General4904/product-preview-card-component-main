@@ -1,0 +1,125 @@
+/* Styles */
+
+/* Desktop */
+body {
+	font-size: 14px;
+	background-color: hsl(30, 38%, 92%);
+	margin: 5em 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#main {
+	background-color: white;
+	border-radius: 5px;
+}
+
+.img-fluid {
+	height: 285px;
+	width: 190px;
+	border-radius: 5px 0 0 5px;
+}
+
+.card-body {
+	padding: 0 1em 0 0;
+}
+
+p.card-text {
+	margin: 0 0 5px 0;
+}
+
+.col-md-4 {
+	padding: 0;
+	/* border: 1px solid black; */
+}
+
+h2 {
+	font-family: "Fraunces", sans-serif;
+	margin: 5px 0 5px 0;
+}
+
+#new {
+	color: hsl(158, 59%, 13%);
+	font-family: "Fraunces", sans-serif;
+	font-size: x-large;
+}
+
+a:link {
+	color: hsl(158, 36%, 37%);
+}
+
+a:hover {
+	color: hsl(159, 61%, 12%);
+}
+
+#old {
+	margin: 0 0 1em 1em;
+	text-align: center;
+	color: hsl(228, 12%, 48%);
+	font-family: "Montserrat", sans-serif;
+	text-decoration: line-through;
+}
+
+.card-text #cart {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-text button.btn:link {
+	font-family: "Montserrat", sans-serif;
+	background-color: hsl(159, 61%, 12%) hsl(158, 36%, 37%);
+	border-color: hsl(158, 36%, 37%);
+}
+
+.card-text button.btn:hover {
+	border-color: hsl(158, 36%, 37%);
+	background-color: hsl(159, 61%, 12%);
+}
+
+@media (min-width: 20px) and (max-width: 1000px) {
+	section {
+		display: none;
+	}
+
+	.card {
+		background-color: hsl(30, 38%, 92%);
+	}
+
+	.card-body {
+		background-color: white;
+		padding: 1em;
+	}
+
+	#mobile {
+		width: 25rem;
+		height: fit-content;
+		border-radius: 5px 5px 0 0;
+	}
+
+	h2 {
+		font-family: "Fraunces", sans-serif;
+		font-size: 16px;
+		font-weight: 700;
+	}
+
+	p {
+		font-family: "Montserrat", sans-serif;
+	}
+
+	.card-text #cart {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media (min-width: 1000px) {
+	.card#portable {
+		display: none;
+	}
+}
